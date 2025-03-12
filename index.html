@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetWP - WordPress Experts | Themes | Plugins | Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cloudflare Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_CLOUDFLARE_TOKEN"}'></script>
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-indigo-50 min-h-screen">
+    <!-- Header Section -->
+    <header class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">LetWP</div>
+            <div class="space-x-6">
+                <a href="#services" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="#blog" class="text-gray-600 hover:text-blue-600">Blog</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-4 py-20">
+        <div class="text-center max-w-2xl mx-auto">
+            <h1 class="text-5xl font-bold text-gray-800 mb-6">
+                WordPress Development Experts
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Crafting premium WordPress themes, powerful plugins, and providing expert services to elevate your web presence.
+            </p>
+            <button onclick="scrollToContact()" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                Start Your Project
+            </button>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div class="text-center p-6">
+                <div class="text-blue-600 text-4xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold mb-2">Custom Themes</h3>
+                <p class="text-gray-600">Pixel-perfect, responsive WordPress themes tailored to your brand</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="text-blue-600 text-4xl mb-4">⚙️</div>
+                <h3 class="text-xl font-bold mb-2">Premium Plugins</h3>
+                <p class="text-gray-600">Extend WordPress functionality with our secure, optimized plugins</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="text-blue-600 text-4xl mb-4">🛠️</div>
+                <h3 class="text-xl font-bold mb-2">Expert Services</h3>
+                <p class="text-gray-600">WordPress optimization, maintenance, and custom development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2023 LetWP. All rights reserved.</p>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-blue-400">Privacy Policy</a>
+                <a href="#" class="hover:text-blue-400">Terms of Service</a>
+                <a href="#" class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToContact() {
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
